@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  min-height: 100vh;
+  background: url("./images/Path\ 2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 20.4375rem;
+  height: 36.25rem;
+  border-radius: 1.25rem;
+  background: #fff;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.5);
+  overflow: hidden; /* This contains the child margins */
+}
+
+.container .hero-img {
+  width: 100%;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.container > h1,
+.container > p,
+.container > button,
+.container a {
+  text-align: center;
+}
+
+.container > h1 {
+  color: #1f2e55;
+  font-size: 1.375rem;
+  font-weight: 900;
+  margin: 0rem 2rem 1.5rem 2rem;
+}
+
+.container > p {
+  color: #717fa6;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.5625rem; /* 166.667% */
+  margin: 0 2rem 1.5rem 2rem;
+}
+
+.rectangle {
+  margin: 0 1.5rem 1.5rem 1.5rem;
+  display: flex;
+}
+
+.rectangle > img {
+  box-sizing: content-box;
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem;
+}
+
+.smaller-rectangle {
+  margin: 1.25rem 3rem 1.25rem 0;
+}
+
+.smaller-rectangle > h2 {
+  color: #1f2e55;
+  font-size: 0.875rem;
+  font-weight: 900;
+  margin-bottom: 0.2rem;
+}
+
+.smaller-rectangle > p {
+  color: #717fa6;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.rectangle a:nth-of-type(1) {
+  color: #382ae1;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-decoration-line: underline;
+  display: block;
+  margin: 2rem 1rem 2rem 0rem;
+  text-align: center;
+}
+
+.rectangle a:nth-of-type(1):hover {
+  cursor: pointer;
+}
+
+.rectangle a:nth-of-type(1):active {
+  color: #766cf1;
+  text-decoration: none;
+}
+
+.container > button {
+  border-radius: 0.6875rem;
+  background: #382ae1;
+  box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+  color: #fff;
+  font-size: 0.9375rem;
+  font-weight: 900;
+  margin: 0 1.5rem 1.5rem 1.5rem;
+  display: inline-block;
+  width: 17.4375rem;
+  /* width: 300px; */
+  height: 3.125rem;
+  border: none;
+}
+
+.container > button:hover {
+    cursor: pointer;
+  }
+
+.container > button:active {
+  border-radius: 11px;
+  background: #766cf1;
+  box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+}
+
+.container > a {
+  display: inline-block;
+  margin: 0rem 7.25rem 2rem 7.25rem;
+  color: #717fa6;
+  font-size: 0.9375rem;
+  font-weight: 900;
+  width: 6rem;
+}
+
+.container > a:hover {
+    cursor: pointer;
+}
+
+.container > a:active {
+    color: #1F2E55;
+}
+
+@media (min-width: 1000px) {
+  main {
+    background: url("./images/Path\ 2\ \(1\).png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .container {
+    width: 450px;
+    max-height: 650px;
+  }
+
+  .container > button {
+    width: 400px;
+    margin-bottom: 40px;
+  }
+
+  .container > a {
+    width: 100%;
+    margin: 0;
+  }
+
+  .container > p {
+    width: 100%;
+    max-width: 263px;
+    margin: 0 auto;
+  }
+
+  .container h1 {
+    font-size: 28px;
+  }
+
+  .smaller-rectangle {
+    margin-right: 110px;
+  }
+
+  .smaller-rectangle > p,
+  .smaller-rectangle > h2 {
+    font-size: 16px;
+  }
+
+  .rectangle a:nth-of-type(1) {
+    font-size: 14px;
+  }
+}
